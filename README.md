@@ -1,17 +1,21 @@
-# flutter_application_1
 
-A new Flutter project.
+# Actividad - Clase Persona en Dart
 
-## Getting Started
+Actividad de la materia **Desarrollo de Aplicaciones Móviles**.
 
-This project is a starting point for a Flutter application.
+## Contenido
 
-A few resources to get you started if this is your first Flutter project:
+El archivo `persona.dart` implementa:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+1. Clase `Persona` con atributos: `nombre`, `edad`, `ciudad`, `profesion`.
+2. Constructor tradicional que recibe los atributos.
+3. Constructor con nombre personalizado (`Persona.fromJson`) que recibe datos en formato JSON.
+4. Impresión en consola usando interpolación de strings (`$variable`).
+5. Dos funciones tradicionales: una con parámetros (`aniosParaCumplir`) y otra sin parámetros (`obtenerSaludo`).
+6. Dos funciones flecha (`=>`): una con parámetros (`esMayorDeEdad`) y otra sin parámetros (`obtenerFechaActual`).
+7. Pruebas de todo lo anterior dentro de `void main()`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Autor
+
+Diego Armando Donado Julio - Ingeniería de Sistemas, UNITECNAR
+>>>>>>> 403de6f96f4eefefad9e5ab6b0d0ecf8f24aae7e
