@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -24,51 +25,7 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: true,
         colorSchemeSeed: const Color.fromARGB(255, 1, 19, 34)
       ),
-      home: Scaffold(
-        appBar: AppBar(
-        title: const Text('Unitecnar App'),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('$counter', style: TextStyle(fontSize: 160, fontWeight: FontWeight(100)),),
-              Text('Click${counter == 1 ? '': 's'}', style: TextStyle(fontSize: 25),)
-            ],
-          ),
-        ),
-        floatingActionButton: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            FloatingActionButton(
-              child: Icon(Icons.plus_one),
-              onPressed: (){
-                setState(() {
-                  
-                counter  ++;
-                });
-              },
-              ),
-              SizedBox(height: 20,),
-              FloatingActionButton(
-              child: Icon(Icons.exposure_minus_1),
-              onPressed: (){
-                 setState(() {
-                  if(counter == 0 ) return;
-                counter --;
-              });
-              }),
-              FloatingActionButton(
-                child: Icon(Icons.refresh),
-                onPressed: (){
-                  setState(() {
-                    
-                  });
-                },
-              )
-          ],
-        ),
-      )
+      home: HomeScreen()
     );
   }
 }
